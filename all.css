@@ -432,7 +432,7 @@ h4{
 }
 
 .reviews ul li{
-    width: 30%;
+    width: 32%;
     padding: 48px 32px;
     font-size: 16px;
     text-align: left;
@@ -486,13 +486,13 @@ h4{
     border-radius: 50%;
 }
 
-.reviews .more{
+.more{
     display: flex;
     justify-content: center;
     padding-bottom: 100px;
 }
 
-.reviews ul li .point{
+.more li{
     width: 10px;
     height: 10px;
     background-color: #DDDDDD;
@@ -501,8 +501,7 @@ h4{
     cursor: pointer;
 }
 
-
-.reviews ul li .point:last-of-type {
+.more li:last-of-type {
     width: 16px;
     background-color: #FFD153;
 }
@@ -510,11 +509,10 @@ h4{
 @media(max-width:768px){
     .reviews ul li{
         width: 100%;
+        margin-bottom: 100px;
     }
 
 }
-
-
 
 
 .footer-info{
