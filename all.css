@@ -81,13 +81,12 @@ h4{
 
 .header{
     height: 100vh;
-    background-image: url("https://raw.githubusercontent.com/JoyingCJY/homework2/main/images/bg_home.svg");
+    background-image: url("https://raw.githubusercontent.com/JoyingCJY/homework2/main/images/home.svg"),url("https://raw.githubusercontent.com/JoyingCJY/homework2/main/images/bg_home.svg");
     background-repeat: no-repeat, no-repeat;
     height: 768px;
-    background-position: right 0;
-    background-size: 850px 768px;
+    background-position: right center,right top;
+    background-size: 532px 534px, 850px 768px;
     position: relative;
-
 }
 
 .hero-ball{
@@ -135,10 +134,6 @@ h4{
 
 .header-info{
     text-align: left;
-    background-image: url("https://raw.githubusercontent.com/JoyingCJY/homework2/main/images/home.svg");
-    background-repeat: no-repeat;
-    background-size: 532px 534px;
-    background-position: right center;
 }
 
 .header-info h1{
@@ -152,10 +147,48 @@ h4{
     color:#56C4C5;
     font-weight: bold;
     padding-top: 140px;
+
 }
 
 .header-info h4{
     padding-bottom: 200px;
+}
+
+@media (max-width:768px){
+    .container{
+        padding: 0 20px;
+    }
+
+    .header {
+        height: 120vh;
+        background-image: url("https://raw.githubusercontent.com/JoyingCJY/homework2/main/images/home.svg"),url("https://raw.githubusercontent.com/JoyingCJY/homework2/main/images/bg_home_sm.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: center 330px,center 330px;
+        background-size: 70%,90%;
+        position: relative;
+    }
+    
+    .header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-logo{
+        padding-bottom: 16px;
+        border-bottom: 2px solid #FFD153;
+        background-color: #ffffff;
+    }
+
+
+
+    .header-info-smtitle{
+        padding-top: 32px;
+    }
+
+    .header-info h4{
+        padding-bottom: 32px;
+    }
+
 }
 
 .platform{
@@ -168,7 +201,7 @@ h4{
     justify-content: space-around;
 }
 
-.platform li{
+.platform ul li{
     width: 30%;
 }
 
@@ -183,6 +216,7 @@ h4{
 
 .platform-title{
     margin: 24px 0;
+    line-height: 1.5;
 }
 
 .platform-text{
@@ -191,7 +225,27 @@ h4{
     padding: 0 5px;
 }
 
-.character-card{
+@media (max-width:374px){
+    .platform{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .platform ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .platform ul li{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+
+
+}
+
+.character ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -199,12 +253,15 @@ h4{
     padding-bottom: 100px;
 }
 
-.character .container h2{
+.character  h2{
     margin-bottom: 16px;
 }
 
+.character p{
+    line-height: 1.5;
+}
 
-.character-card li{
+.character ul li{
     box-shadow: 0px 2px 10px #00000014;
     border-radius: 12px;
     width: 23%;
@@ -221,6 +278,22 @@ h4{
     line-height: 1.5;
     text-align: center;
 }
+
+@media (max-width:768px) {
+    .character ul li{
+        width: 48%;
+        margin-bottom: 36px;
+    }
+    
+}
+
+@media (max-width:375px){
+    .character ul li{
+        width: 100%;
+    }
+   
+}
+
 
 .function .container{
     display: flex;
@@ -239,9 +312,10 @@ h4{
 }
 
 
-.function-functions ul li{
+.function-functions li{
     padding: 32px 32px 48px 32px;
-    width: 50%;
+    width: 45%;
+    margin-right: 5%;
     border-radius: 12px;
     box-shadow: 0px 2px 10px #00000014;
     text-align: left;
@@ -297,26 +371,75 @@ h4{
     color: #56C4C5;  
 }
 
+
+@media(max-width:768px){
+    .function .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .function-functions ul{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .function-functions li{
+        width: 46%;
+        margin-bottom: 36px;
+        margin-right: 4%;
+    }
+
+    .function .function-info{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media(max-width:375px){
+    .function .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .function-functions ul{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .function-functions li{
+        width: 100%;
+        margin-bottom: 36px;
+    }
+
+    .function .function-info{
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+}
+
 .reviews h2{
     margin-bottom: 104px;
+
 }
 
 .reviews-items{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-left: -8px;
     margin-right: -8px;
     margin-bottom: 24px;
 }
 
-.reviews-items li{
+.reviews ul li{
+    width: 30%;
     padding: 48px 32px;
     font-size: 16px;
     text-align: left;
     line-height: 1.5;
     box-shadow: 0px 2px 10px #00000014;
     position: relative;
-    margin: 8px;
+    border-radius: 12px;
 }
 
 .card-text{
@@ -363,23 +486,35 @@ h4{
     border-radius: 50%;
 }
 
-.button{
-    background-color: #DDDDDD;
-    border: 0px;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin-bottom: 100px;
-    margin-right: 8px;
+.reviews .more{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
 }
 
-.button-active{
-    background-color: #FFD153;
-    border: 0px;
-    width: 16px;
-    height: 10px;  
-    border-radius: 20px;
+.reviews ul li .point{
+    width: 10px;
+    height: 10px;
+    background-color: #DDDDDD;
+    border-radius: 50px;
+    margin: 0 5px;
+    cursor: pointer;
 }
+
+
+.reviews ul li .point:last-of-type {
+    width: 16px;
+    background-color: #FFD153;
+}
+
+@media(max-width:768px){
+    .reviews ul li{
+        width: 100%;
+    }
+
+}
+
+
 
 
 .footer-info{
@@ -395,6 +530,28 @@ h4{
 .footer-info h2{
     padding-top: 320px;
     margin-bottom: 48px;
+}
+
+@media(max-width:768px){
+    .footer-info{
+    background-image: url("https://raw.githubusercontent.com/JoyingCJY/homework2/dffc971de2184ce6ec45990df57c367e8a650d1d/images/footer_sm.svg");
+    background-position: center top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    }
+
+    .footer-info h2{
+        padding-top: 200px;
+
+    }
+}
+
+
+@media(max-width:375px){
+    .footer-info h2{
+        padding-top: 300px;
+    }
+    
 }
 
 
@@ -582,5 +739,3 @@ h4{
     margin-bottom: 16px;
     font-family: "Noto Sans TC", sans-serif;
 }
-
-
