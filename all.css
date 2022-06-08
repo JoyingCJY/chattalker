@@ -681,7 +681,7 @@ h4{
 }
 
 .equal{
-    padding: 50px 10px;
+    padding: 60px 10px;
 }
 
 .subscribe-amount, .fee{
@@ -702,15 +702,24 @@ h4{
     text-align: left;
 }
 
-.feature{
+.features{
+    margin-bottom: 30px;
+}
+.features li{
     position: relative;
+    margin: 16px;
 }
 
-.feature img{
+.features img{
     position: absolute;
     left:0;
-    top: 20px
+    top:0
 }
+
+.features p{
+    padding-left: 30px;
+}
+
 .qa{
     padding-top: 100px;
     padding-bottom: 100px;;
@@ -721,9 +730,6 @@ h4{
     padding-bottom: 100px;
 }
 
-.qa h2{
-    padding-bottom: 48px;
-}
 
 .qa-all{
     display: flex;
@@ -731,19 +737,35 @@ h4{
     text-align: left;
 }
 
-.qa-box {
+.qa ul li {
     border-radius: 12px;
-    border: 2px solid #00000014;
+    box-shadow: 0px 2px 10px #00000014;
     width: 100%;
-    border-style: none;
+    padding: 16px 32px;
+    position: relative;
+    margin-bottom: 36px;
 }
 
-.qa-text {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 32px;
-    text-decoration: none;
+.qa h2{
     text-align: left;
-    margin-bottom: 16px;
-    font-family: "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.qu h2:last-of-type{
+    color:#56C4C5;
+}
+
+.qa p{
+    text-align: left;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.qa ul li a{
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
 }
