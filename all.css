@@ -614,12 +614,13 @@ h4{
 
 .plan-button{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     overflow-x: auto;
-    margin-right: 0 auto;
+    margin: 0 auto;
     padding: 0 10px;
     font-size: 16px;
     padding-bottom: 48px;
+    width: 80%;
 }
 
 .population-button{
@@ -673,7 +674,6 @@ h4{
 }
 
 
-
 .month-fee{
     background-color: #F5F5F5;
     padding: 50px 24px;
@@ -718,6 +718,7 @@ h4{
 
 .features p{
     padding-left: 30px;
+    line-height: 1.5;
 }
 
 .qa{
@@ -746,13 +747,40 @@ h4{
     margin-bottom: 36px;
 }
 
-.qa h2{
+.qa ul li button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-style: none;
+    background-color: white;
+    width: 100%;
+    padding: 0;
+}
+
+.plus-icon{
+    background-image: url("https://raw.githubusercontent.com/JoyingCJY/homework2/main/images/icon_plus.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 36px;
+    height: 36px;
+}
+
+.minus-icon{
+    background-image: url("https://raw.githubusercontent.com/JoyingCJY/homework2/main/images/icon_minus.svg"); 
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 36px;
+    height: 36px; 
+}
+
+.qa-all h2{
     text-align: left;
     line-height: 1.5;
     font-size: 18px;
 }
 
-.qu h2:last-of-type{
+.qa-expand-title{
     color:#56C4C5;
 }
 
